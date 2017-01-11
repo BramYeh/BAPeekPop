@@ -35,7 +35,7 @@ The reference ![example](https://github.com/BramYeh/BAPeekPop/blob/master/Exampl
 ### How to add Action and Group Buttons
 
 It's similar as original implementaion, you need to offer 
-```@property(nonatomic, readonly) NSArray<id<UIPreviewActionItem>> *previewActionItems;`` 
+`@property(nonatomic, readonly) NSArray<id<UIPreviewActionItem>> *previewActionItems;`
 in the previewing-viewcontroller
 
 And in this array, you need to add objects of `BAPreviewAction` or `BAPreviewActionGroup`
