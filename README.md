@@ -1,15 +1,18 @@
 # BAPeekPop
 
-[![CI Status](http://img.shields.io/travis/Bram (hryeh)/BAPeekPop.svg?style=flat)](https://travis-ci.org/Bram (hryeh)/BAPeekPop)
+[![CI Status](http://img.shields.io/travis/Bram (hryeh)/BAPeekPop.svg?style=flat)](https://travis-ci.org/BramYeh/BAPeekPop)
 [![Version](https://img.shields.io/cocoapods/v/BAPeekPop.svg?style=flat)](http://cocoapods.org/pods/BAPeekPop)
 [![License](https://img.shields.io/cocoapods/l/BAPeekPop.svg?style=flat)](http://cocoapods.org/pods/BAPeekPop)
 [![Platform](https://img.shields.io/cocoapods/p/BAPeekPop.svg?style=flat)](http://cocoapods.org/pods/BAPeekPop)
 
+* Peek &amp; Pop Compat for Long Press on non 3D touch Device of iOS 9+ 
+* BAPeekPop is the Objective-C library to support 3D touch similar operation on older device via long-press
+
+![BAPeekPop](https://github.com/BramYeh/BAPeekPop/blob/master/bapeekpop.gif)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
