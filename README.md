@@ -10,7 +10,57 @@
 
 ![BAPeekPop](https://github.com/BramYeh/BAPeekPop/blob/master/bapeekpop.gif)
 
-## Example
+## Integration Guide
+
+### Initilization and Register
+
+To integrate BAPeekPop, in your viewcontroller, you just init BAPeekPop instance and call its register
+
+```objc
+BAPeekPop *baPeekPop = [[BAPeekPop alloc] initWithTarget:self];
+[baPeekPop registerForPreviewingWithDelegate:self sourceView:self.view];
+```
+
+The delegate is the same as `id<UIViewControllerPreviewingDelegate>`
+
+### Delegate Handler
+
+BAPeekPop has no extra methods in delegate, you only need to implement 
+```
+NS_CLASS_AVAILABLE_IOS(9_0) @protocol UIViewControllerPreviewingDelegate <NSObject>
+```
+
+The reference ![example](https://github.com/BramYeh/BAPeekPop/blob/master/Example/BAPeekPop/ViewController.m#L95)
+
+### How to add Action and Group Buttons
+
+It's similar as original implementaion, you need to offer 
+```@property(nonatomic, readonly) NSArray<id<UIPreviewActionItem>> *previewActionItems;`` 
+in the previewing-viewcontroller
+
+And in this array, you need to add objects of `BAPreviewAction` or `BAPreviewActionGroup`
+
+BAPeekPop has offer their factory methods as following
+
+```objc
+NS_CLASS_AVAILABLE_IOS(9_0) @interface BAPreviewAction : UIPreviewAction
+
+@property(nonatomic, assign, readonly) UIPreviewActionStyle style;
+
++ (instancetype)actionWithTitle:(NSString *)title style:(UIPreviewActionStyle)style handler:(void (^)(UIPreviewAction *action, UIViewController *previewViewController))handler;
+
+@end
+
+NS_CLASS_AVAILABLE_IOS(9_0) @interface BAPreviewActionGroup : UIPreviewActionGroup
+
++ (instancetype)actionGroupWithTitle:(NSString *)title style:(UIPreviewActionStyle)style actions:(NSArray<BAPreviewAction *> *)actions;
+
+@end
+```
+The reference ![example](https://github.com/BramYeh/BAPeekPop/blob/master/Example/BAPeekPop/PreviewingViewController.m#L53)
+
+
+## Example Project
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
