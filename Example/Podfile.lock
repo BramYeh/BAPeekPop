@@ -1,0 +1,26 @@
+PODS:
+  - BAPeekPop (1.0.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - Kiwi (2.4.0)
+
+DEPENDENCIES:
+  - BAPeekPop (from `../`)
+  - FBSnapshotTestCase
+  - Kiwi
+
+EXTERNAL SOURCES:
+  BAPeekPop:
+    :path: ../
+
+SPEC CHECKSUMS:
+  BAPeekPop: 75ae3c37aa32edc9c4c842ea2ee76b05d972f081
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
+
+PODFILE CHECKSUM: 29965c01cca6884ef3b50395c950809d5df6cb9d
+
+COCOAPODS: 1.1.1

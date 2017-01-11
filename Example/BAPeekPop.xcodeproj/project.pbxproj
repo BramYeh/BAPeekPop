@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		308CFCA90221DD46DE62906E /* Pods_BAPeekPop_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F35EEF0EE4782913434DDDCC /* Pods_BAPeekPop_Tests.framework */; };
+		37079AAE1E26833400382D60 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37079AAB1E26833400382D60 /* CollectionViewCell.m */; };
+		37079AAF1E26833400382D60 /* PreviewingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37079AAD1E26833400382D60 /* PreviewingViewController.m */; };
+		37079AB71E26836C00382D60 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37079AB31E26836C00382D60 /* 1.jpg */; };
+		37079AB81E26836C00382D60 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37079AB41E26836C00382D60 /* 2.jpg */; };
+		37079AB91E26836C00382D60 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37079AB51E26836C00382D60 /* 3.jpg */; };
+		37079ABA1E26836C00382D60 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37079AB61E26836C00382D60 /* 4.jpg */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* BAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* BAAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* BAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* BAViewController.m */; };
+		6003F59E195388D20070C39A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* AppDelegate.m */; };
+		6003F5A7195388D20070C39A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* ViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -38,7 +44,15 @@
 /* Begin PBXFileReference section */
 		06F0B3EC1A624587A9B39D9C /* Pods_BAPeekPop_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BAPeekPop_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC637113F76D8FFC1F4A84B /* Pods-BAPeekPop_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAPeekPop_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BAPeekPop_Example/Pods-BAPeekPop_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5D94320FA1F5F4675F25A3AB /* BAPeekPop.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = BAPeekPop.podspec; path = ../BAPeekPop.podspec; sourceTree = "<group>"; };
+		37079AAA1E26833400382D60 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		37079AAB1E26833400382D60 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		37079AAC1E26833400382D60 /* PreviewingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewingViewController.h; sourceTree = "<group>"; };
+		37079AAD1E26833400382D60 /* PreviewingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewingViewController.m; sourceTree = "<group>"; };
+		37079AB31E26836C00382D60 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = Images/1.jpg; sourceTree = "<group>"; };
+		37079AB41E26836C00382D60 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = Images/2.jpg; sourceTree = "<group>"; };
+		37079AB51E26836C00382D60 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpg; path = Images/3.jpg; sourceTree = "<group>"; };
+		37079AB61E26836C00382D60 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 4.jpg; path = Images/4.jpg; sourceTree = "<group>"; };
+		5D94320FA1F5F4675F25A3AB /* BAPeekPop.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BAPeekPop.podspec; path = ../BAPeekPop.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* BAPeekPop_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BAPeekPop_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,10 +61,10 @@
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6003F59B195388D20070C39A /* BAPeekPop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BAPeekPop-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* BAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BAAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* BAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BAAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* BAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BAViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* BAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BAViewController.m; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6003F5A5195388D20070C39A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6003F5A6195388D20070C39A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* BAPeekPop_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BAPeekPop_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -58,12 +72,12 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		68A10F78EA393989938AB53F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		68A10F78EA393989938AB53F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6CC4DF587BEE54CE45E45FA3 /* Pods-BAPeekPop_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAPeekPop_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BAPeekPop_Tests/Pods-BAPeekPop_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9618D9D89A00D8AE3325491F /* Pods-BAPeekPop_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAPeekPop_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BAPeekPop_Tests/Pods-BAPeekPop_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D266D05AA2EDF8C0C567837F /* Pods-BAPeekPop_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAPeekPop_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-BAPeekPop_Example/Pods-BAPeekPop_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DD2BF58B40EF7C9147CC4491 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DD2BF58B40EF7C9147CC4491 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F35EEF0EE4782913434DDDCC /* Pods_BAPeekPop_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BAPeekPop_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -93,6 +107,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37079AB21E26835900382D60 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				37079AB31E26836C00382D60 /* 1.jpg */,
+				37079AB41E26836C00382D60 /* 2.jpg */,
+				37079AB51E26836C00382D60 /* 3.jpg */,
+				37079AB61E26836C00382D60 /* 4.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -130,11 +155,15 @@
 		6003F593195388D20070C39A /* Example for BAPeekPop */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* BAAppDelegate.h */,
-				6003F59D195388D20070C39A /* BAAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* BAViewController.h */,
-				6003F5A6195388D20070C39A /* BAViewController.m */,
+				6003F59C195388D20070C39A /* AppDelegate.h */,
+				6003F59D195388D20070C39A /* AppDelegate.m */,
+				6003F5A5195388D20070C39A /* ViewController.h */,
+				6003F5A6195388D20070C39A /* ViewController.m */,
+				37079AAA1E26833400382D60 /* CollectionViewCell.h */,
+				37079AAB1E26833400382D60 /* CollectionViewCell.m */,
+				37079AAC1E26833400382D60 /* PreviewingViewController.h */,
+				37079AAD1E26833400382D60 /* PreviewingViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -145,6 +174,7 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				37079AB21E26835900382D60 /* Images */,
 				6003F595195388D20070C39A /* BAPeekPop-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
@@ -248,6 +278,7 @@
 				ORGANIZATIONNAME = "Bram (hryeh)";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
+						LastSwiftMigration = 0820;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -277,6 +308,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				37079ABA1E26836C00382D60 /* 4.jpg in Resources */,
+				37079AB71E26836C00382D60 /* 1.jpg in Resources */,
+				37079AB81E26836C00382D60 /* 2.jpg in Resources */,
+				37079AB91E26836C00382D60 /* 3.jpg in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -320,7 +355,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		9F1D317CE50D32B1533E8054 /* [CP] Copy Pods Resources */ = {
@@ -365,7 +400,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		EEFECB7B8AE6BE5E1F5F145E /* [CP] Copy Pods Resources */ = {
@@ -390,9 +425,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F59E195388D20070C39A /* BAAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* BAViewController.m in Sources */,
+				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
+				6003F5A7195388D20070C39A /* ViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				37079AAF1E26833400382D60 /* PreviewingViewController.m in Sources */,
+				37079AAE1E26833400382D60 /* CollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +595,7 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BAPeekPop_Example.app/BAPeekPop_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -578,6 +616,7 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BAPeekPop_Example.app/BAPeekPop_Example";
 				WRAPPER_EXTENSION = xctest;
 			};

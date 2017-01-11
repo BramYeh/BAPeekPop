@@ -1,0 +1,6 @@
+framework module BAPeekPop {
+  umbrella header "BAPeekPop-umbrella.h"
+
+  export *
+  module * { export * }
+}
