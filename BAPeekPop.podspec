@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BAPeekPop'
-  s.version          = '1.0.0'
+  s.version          = '0.9.0'
   s.summary          = 'Peek & Pop Compat for Long Press on non 3D touch Device of iOS 9+'
 
 # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/BramYeh/BAPeekPop'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Bram Yeh' => 'hanru.yeh@gmail.com' }
-  s.source           = { :git => 'git@github.com:BramYeh/BAPeekPop.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/BramYeh/BAPeekPop.git', :tag => s.version.to_s }
 
   s.requires_arc = true
   s.platform = :ios, '8.0'
