@@ -75,7 +75,7 @@ pod "BAPeekPop"
 
 ## Author
 
-Bram (hryeh), hryeh@yahoo-inc.com
+Bram (hryeh), hanru.yeh@gmail.com
 
 ## License
 
