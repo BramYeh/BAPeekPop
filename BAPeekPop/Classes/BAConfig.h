@@ -12,12 +12,20 @@ extern CGFloat const BACornerRadius;
 
 extern CGFloat const BABlurRadius;
 
-extern CGFloat const BAHorizontalMargin;
+extern CGFloat const BAHorizontalMarginPortrait;
 
-extern CGFloat const BAVerticalMargin;
+extern CGFloat const BAVerticalMarginPortrait;
+
+extern CGFloat const BAHorizontalMarginLandscape;
+
+extern CGFloat const BAVerticalMarginLandscape;
 
 extern CGFloat const BAActionItemHeight;
 
 extern CGFloat const BAActionCollectionViewVerticalMargin;
 
 extern CGFloat const BAPeekOffset;
+
+CGFloat getHorizontalMargin();
+
+CGFloat getVerticalMargin();

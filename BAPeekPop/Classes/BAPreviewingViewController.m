@@ -68,7 +68,7 @@
         UICollectionViewFlowLayout *collectionViewLayout = [[UICollectionViewFlowLayout alloc] init];
         collectionViewLayout.minimumLineSpacing = 1.0f / [UIScreen mainScreen].scale;
         collectionViewLayout.minimumInteritemSpacing = 0.0f;
-        collectionViewLayout.itemSize = CGSizeMake([UIScreen mainScreen].bounds.size.width - BAHorizontalMargin * 2, BAActionItemHeight);
+        collectionViewLayout.itemSize = CGSizeMake([UIScreen mainScreen].bounds.size.width - getHorizontalMargin() * 2, BAActionItemHeight);
         
         CGSize preferSize = [self preferFrameOfActionCollectionView].size;
         CGRect initActionFrame = CGRectMake(([UIScreen mainScreen].bounds.size.width - preferSize.width) / 2.0f,
@@ -168,9 +168,16 @@
     }
 }
 
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator>)coordinator {
+    // should animate previewing view and then callback function
+    if ([self.delegate respondsToSelector:@selector(previewingViewControllerDidDismiss:)]) {
+        [self.delegate previewingViewControllerDidDismiss:self];
+    }
+}
+
 - (CGRect)defaultFrameOfPreviewingController {
     // TODO, need to survey iOS's default 3D touch previewing rect
-    CGRect defaultFrame = CGRectInset([UIScreen mainScreen].bounds, BAHorizontalMargin, BAVerticalMargin);
+    CGRect defaultFrame = CGRectInset([UIScreen mainScreen].bounds, getHorizontalMargin(), getVerticalMargin());
     CGSize preferredContentSize = self.peekViewController.preferredContentSize;
     
     // invalid preferredContentSize, return default frame
@@ -185,7 +192,7 @@
     }
     if (defaultFrame.size.height < preferredContentSize.height) {
         preferredContentSize.height = defaultFrame.size.height;
-        preferredContentSize.width = defaultFrame.size.width / ratio;
+        preferredContentSize.width = defaultFrame.size.height / ratio;
     }
     
     return CGRectMake(([UIScreen mainScreen].bounds.size.width - preferredContentSize.width) / 2.0f,
@@ -201,7 +208,7 @@
         height = [UIScreen mainScreen].bounds.size.height * 0.65f; // default height
     }
     
-    CGSize preferSize = CGSizeMake([UIScreen mainScreen].bounds.size.width - BAHorizontalMargin * 2, height);
+    CGSize preferSize = CGSizeMake([UIScreen mainScreen].bounds.size.width - getHorizontalMargin() * 2, height);
     
     return CGRectMake(([UIScreen mainScreen].bounds.size.width - preferSize.width) / 2.0f,
                       [UIScreen mainScreen].bounds.size.height - preferSize.height - BAActionCollectionViewVerticalMargin,
