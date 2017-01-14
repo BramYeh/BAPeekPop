@@ -168,6 +168,13 @@
     }
 }
 
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator>)coordinator {
+    // should animate previewing view and then callback function
+    if ([self.delegate respondsToSelector:@selector(previewingViewControllerDidDismiss:)]) {
+        [self.delegate previewingViewControllerDidDismiss:self];
+    }
+}
+
 - (CGRect)defaultFrameOfPreviewingController {
     // TODO, need to survey iOS's default 3D touch previewing rect
     CGRect defaultFrame = CGRectInset([UIScreen mainScreen].bounds, getHorizontalMargin(), getVerticalMargin());
