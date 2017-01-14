@@ -8,37 +8,38 @@
 
 // https://github.com/kiwi-bdd/Kiwi
 
-SPEC_BEGIN(InitialTests)
+@import Kiwi;
+#import <BAPeekPop/BAPeekPop.h>
 
-describe(@"My initial tests", ^{
+SPEC_BEGIN(Tests)
 
-  context(@"will fail", ^{
-
-      it(@"can do maths", ^{
-          [[@1 should] equal:@2];
-      });
-
-      it(@"can read", ^{
-          [[@"number" should] equal:@"string"];
-      });
-    
-      it(@"will wait and fail", ^{
-          NSObject *object = [[NSObject alloc] init];
-          [[expectFutureValue(object) shouldEventually] receive:@selector(autoContentAccessingProxy)];
-      });
-  });
-
-  context(@"will pass", ^{
-    
-      it(@"can do maths", ^{
-        [[@1 should] beLessThan:@23];
-      });
-    
-      it(@"can read", ^{
-          [[@"team" shouldNot] containString:@"I"];
-      });  
-  });
-  
+describe(@"BAPeekPop", ^{
+    context(@"test initialization", ^{
+        it(@"BAPeekPop", ^{
+            BAPeekPop *baPeekPop = [[BAPeekPop alloc] initWithTarget:nil];
+            [[baPeekPop shouldNot] beNil];
+        });
+        
+        it(@"BAPreviewAction", ^{
+            BAPreviewAction *baPreviewAction = [BAPreviewAction actionWithTitle:@"UIPreviewActionStyleDefault" style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
+                // no operation
+            }];
+            [[baPreviewAction shouldNot] beNil];
+            [[theValue(baPreviewAction.style) should] equal:theValue(UIPreviewActionStyleDefault)];
+        });
+        
+        it(@"BAPreviewActionGroup", ^{
+            BAPreviewActionGroup *baPreviewActionGoup = [BAPreviewActionGroup actionGroupWithTitle:@"UIPreviewActionGroup" style:UIPreviewActionStyleDefault actions:@[[BAPreviewAction actionWithTitle:@"ActionGroup with 1st position" style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
+            }],
+                                                                                                                                                              [BAPreviewAction actionWithTitle:@"ActionGroup with 2nd position" style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
+            }],
+                                                                                                                                                              [BAPreviewAction actionWithTitle:@"ActionGroup with 3rd position" style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
+            }]
+                                                                                                                                                              ]];
+            
+            [[baPreviewActionGoup shouldNot] beNil];
+        });
+    });
 });
 
 SPEC_END
