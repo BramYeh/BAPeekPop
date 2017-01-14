@@ -67,10 +67,20 @@
     return YES;
 }
 
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    [self.collectionView.collectionViewLayout invalidateLayout];
+}
+
 #pragma mark - UICollectionViewDelegateFlowLayout
 
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     CGFloat size = self.view.bounds.size.width / 2.0f - 15.0f;
+    if (UIDeviceOrientationIsLandscape([UIDevice currentDevice].orientation)) {
+        // code for landscape orientation
+        size = self.view.bounds.size.width / 3.0f - 15.0f;;
+    }
     return CGSizeMake(size, size);
 }
 
