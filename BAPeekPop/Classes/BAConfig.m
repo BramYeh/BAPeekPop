@@ -16,9 +16,9 @@ CGFloat const BAHorizontalMarginPortrait = 10.0f;
 
 CGFloat const BAVerticalMarginPortrait = 30.0f;
 
-CGFloat const BAHorizontalMarginLandscape = 10.0f;
+CGFloat const BAHorizontalMarginLandscape = 30.0f;
 
-CGFloat const BAVerticalMarginLandscape = 30.0f;
+CGFloat const BAVerticalMarginLandscape = 10.0f;
 
 CGFloat const BAActionItemHeight = 44.0f;
 
