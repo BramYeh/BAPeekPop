@@ -92,7 +92,7 @@
         
         // 2. add arrow-up icon
         self.arrowUpImageView = ({
-            UIImage *image = [UIImage imageNamed:@"icon-arrow-up" inBundle:[NSBundle bundleForClass:[BAPreviewingViewController class]] compatibleWithTraitCollection:nil];
+            UIImage *image = [UIImage imageNamed:@"icon_peek_pop_arrow_up"];
             UIImageView *arrowUpImageView = [[UIImageView alloc] initWithImage:image];
             arrowUpImageView.translatesAutoresizingMaskIntoConstraints = NO;
             arrowUpImageView.alpha = 0.0f;

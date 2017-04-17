@@ -15,18 +15,8 @@
 
 // initialized target view controller
 @property (nonatomic, weak) UIViewController *targetController;
-// force touch parameter
-@property (nonatomic, strong) id <UIViewControllerPreviewing> previewingContext;
 @property (nonatomic, weak) id <UIViewControllerPreviewingDelegate> delegate;
 @property (nonatomic, weak) UIView *sourceView;
-// long press and its mouse moving
-@property (nonatomic, assign) CGPoint startPoint;
-@property (nonatomic, strong) UILongPressGestureRecognizer *longPressGestureRecognizer;
-// pan gesture
-@property (nonatomic, strong) UIPanGestureRecognizer *panGestureRecongnizer;
-//
-@property (nonatomic, strong) BAPreviewingViewController *previewingViewController;
-
 @end
 
 @implementation BAPeekPop
