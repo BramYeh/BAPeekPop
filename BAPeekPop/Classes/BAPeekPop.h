@@ -25,8 +25,8 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface BAPeekPop : NSObject
 /**
  Default initialization method to create BAPeekPop
 
- @param targetController the viewcontroller on which you want the BAPeekPop to support Peek & Pop feature
- @return BAPeekPop instance
+ @param targetController The viewcontroller on which you want the BAPeekPop to support Peek & Pop feature.
+ @return BAPeekPop instance.
  */
 - (instancetype)initWithTarget:(UIViewController *)targetController NS_DESIGNATED_INITIALIZER;
 
@@ -50,14 +50,14 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface BAPeekPop : NSObject
 - (void)unregisterForPreviewingWithContext:(id <UIViewControllerPreviewing>)previewing;
 
 /**
- <#Description#>
+ Make this function available to other files to be able to use the peekpop view in MKAnnotations since annotations cannot detect long tap gestures using BAPeekPop. However, I would strongly recommend not to call this method directly.
 
- @param contentViewController <#contentViewController description#>
- @param sourcePoint <#sourcePoint description#>
+ @param contentViewController The viewcontrooller that actually application offers.
+ @param sourcePoint The point, that previewing viewcontroller would animate to pop up from this point.
  */
 - (void)presentPreviewingViewController:(UIViewController *)contentViewController sourcePoint:(CGPoint)sourcePoint;
 /**
- <#Description#>
+ Make this function available to other files to be able to use the peekpop view in MKAnnotations since annotations cannot detect long tap gestures using BAPeekPop. However, I would strongly recommend not to call this method directly.
  */
 - (void)dismissPreviewingViewController;
 
@@ -67,12 +67,28 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface BAPreviewAction : UIPreviewAction
 
 @property(nonatomic, assign, readonly) UIPreviewActionStyle style;
 
+/**
+ Initialization method to create BAPreviewAction which inherits UIPreviewAction, which is a peek quick action using a specified title, style, and handler.
+
+ @param title The quick action’s title.
+ @param style The quick action’s style. For a complete list of styles, see the UIPreviewActionStyle enumeration in UIPreviewActionItem Protocol Reference.
+ @param handler A block that is called when the user selects the peek quick action.
+ @return A newly-created peek quick action, which inherits UIPreviewAction.
+ */
 + (instancetype)actionWithTitle:(NSString *)title style:(UIPreviewActionStyle)style handler:(void (^)(UIPreviewAction *action, UIViewController *previewViewController))handler;
 
 @end
 
 NS_CLASS_AVAILABLE_IOS(9_0) @interface BAPreviewActionGroup : UIPreviewActionGroup
 
+/**
+ Initialization method to create BAPreviewActionGroup which inherits UIPreviewActionGroup, which is a preview quick action group contains one or more child quick actions, each an instance of the BAPreviewAction class.
+
+ @param title The peek quick action group’s title.
+ @param style The style for the peek quick action group. When the system presents the group’s submenu, each child quick action is displayed using its own style. The available styles are described in the UIPreviewActionStyle enumeration in UIPreviewActionItem.
+ @param actions An array of UIPreviewAction objects, displayed as the child quick actions for the peek quick action group.
+ @return A newly initialized peek quick action group, which inherits UIPreviewActionGroup.
+ */
 + (instancetype)actionGroupWithTitle:(NSString *)title style:(UIPreviewActionStyle)style actions:(NSArray<BAPreviewAction *> *)actions;
 
 @end
