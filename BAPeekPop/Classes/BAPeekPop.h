@@ -16,14 +16,14 @@
 NS_CLASS_AVAILABLE_IOS(9_0) @interface BAPeekPop : NSObject
 
 // force touch parameter
-@property (nonatomic, readonly) id <UIViewControllerPreviewing> previewingContext;
-@property (nonatomic, readonly) CGPoint startPoint;
+@property (nonatomic, strong, readonly) id <UIViewControllerPreviewing> previewingContext;
+@property (nonatomic, assign, readonly) CGPoint startPoint;
 // long press and its mouse moving
-@property (nonatomic, readonly) UILongPressGestureRecognizer *longPressGestureRecognizer;
+@property (nonatomic, strong, readonly) UILongPressGestureRecognizer *longPressGestureRecognizer;
 // pan gesture
-@property (nonatomic, readonly) UIPanGestureRecognizer *panGestureRecongnizer;
+@property (nonatomic, strong, readonly) UIPanGestureRecognizer *panGestureRecongnizer;
 // BAPeekPop's customized previewing viewcontroller
-@property (nonatomic, readonly) BAPreviewingViewController *previewingViewController;
+@property (nonatomic, strong, readonly) BAPreviewingViewController *previewingViewController;
 
 /**
  Default initialization method to create BAPeekPop

@@ -9,8 +9,8 @@
 @import Accelerate;
 
 #import "BAPeekPop+Private.h"
+#import "BAPreviewingViewController+Private.h"
 #import "BAConfig.h"
-#import "BAPreviewingViewController.h"
 #import "BAActionCollectionViewCell.h"
 
 @interface BAPreviewingViewController () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
