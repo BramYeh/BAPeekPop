@@ -10,6 +10,9 @@
 #import <Foundation/Foundation.h>
 #import "BAPreviewingViewController.h"
 
+/**
+ BAPeekPop offers gestures to support Peek & Pop Compat for Long Press on non 3D touch Device of iOS 9+
+ */
 NS_CLASS_AVAILABLE_IOS(9_0) @interface BAPeekPop : NSObject
 
 // force touch parameter
@@ -19,7 +22,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface BAPeekPop : NSObject
 @property (nonatomic, readonly) UILongPressGestureRecognizer *longPressGestureRecognizer;
 // pan gesture
 @property (nonatomic, readonly) UIPanGestureRecognizer *panGestureRecongnizer;
-// customize previewing viewcontroller
+// BAPeekPop's customized previewing viewcontroller
 @property (nonatomic, readonly) BAPreviewingViewController *previewingViewController;
 
 /**
