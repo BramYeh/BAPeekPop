@@ -22,13 +22,14 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface BAPeekPop : NSObject
 //
 @property (nonatomic, strong) BAPreviewingViewController *previewingViewController;
 
-- (void)dismissPreviewingViewController;
 - (instancetype)initWithTarget:(UIViewController *)targetController NS_DESIGNATED_INITIALIZER;
 
 - (id <UIViewControllerPreviewing>)registerForPreviewingWithDelegate:(id<UIViewControllerPreviewingDelegate>)delegate sourceView:(UIView *)sourceView;
-
 - (void)unregisterForPreviewingWithContext:(id <UIViewControllerPreviewing>)previewing;
+
 - (void)presentPreviewingViewController:(UIViewController *)contentViewController sourcePoint:(CGPoint)sourcePoint;
+- (void)dismissPreviewingViewController;
+
 @end
 
 NS_CLASS_AVAILABLE_IOS(9_0) @interface BAPreviewAction : UIPreviewAction

@@ -76,7 +76,7 @@
 		47F98243680759A47F66E898E2B94EAE /* KWBeZeroMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 433F533AB670F250C3AEC9B2461EF6C8 /* KWBeZeroMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A808EC1C48615D7FA1DD34AF61757ED /* KWBeTrueMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = A93DC52A3EFE1B6EF956431BB898D4C7 /* KWBeTrueMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A81E6CDBC85B95C30C161709A26A432 /* KWSymbolicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9C14F1E62873C962871895055EB59 /* KWSymbolicator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4F215259B3AE7E07CDE636706B2BD21C /* BAPreviewingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 12334411455DD376F8FA489FB32A0667 /* BAPreviewingViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4F215259B3AE7E07CDE636706B2BD21C /* BAPreviewingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 12334411455DD376F8FA489FB32A0667 /* BAPreviewingViewController.h */; settings = {ATTRIBUTES = (Project, Public, ); }; };
 		4F7C808A15E665124D98DFC80DD1AA61 /* KWMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BC7B2B3BB2BE5463FF922DA6378F6E /* KWMatcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		4F932F5B556C639DDB006453EF1A65D0 /* KiwiBlockMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = FEC5D3D0EDD2CE2773805E90770549FB /* KiwiBlockMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		506D761F91EC3583789A837C559972FE /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E5007305DB0849E2E209A425DCEEB4 /* FBSnapshotTestCase-dummy.m */; };
@@ -1041,12 +1041,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CDF75331B44ABA49F515FFAFBE2A5EC /* BAActionCollectionViewCell.h in Headers */,
-				9E69EE64A8468C7C8364D63B8EE1C5B9 /* BAConfig.h in Headers */,
-				37E265C8FC960BD5FF0CB62C5D60E6B4 /* BAPeekPop+Private.h in Headers */,
 				8FEB2F8B79098AC5FDB6BCAFA525C338 /* BAPeekPop-umbrella.h in Headers */,
 				2AA07DE2DC9283ED347D12D5248A95EC /* BAPeekPop.h in Headers */,
+				2CDF75331B44ABA49F515FFAFBE2A5EC /* BAActionCollectionViewCell.h in Headers */,
 				4F215259B3AE7E07CDE636706B2BD21C /* BAPreviewingViewController.h in Headers */,
+				9E69EE64A8468C7C8364D63B8EE1C5B9 /* BAConfig.h in Headers */,
+				37E265C8FC960BD5FF0CB62C5D60E6B4 /* BAPeekPop+Private.h in Headers */,
 				E5116D27FD3411F901DBA5E80A1FDCD7 /* BAViewControllerPreviewingContext.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

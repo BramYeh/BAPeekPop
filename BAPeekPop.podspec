@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'BAPeekPop/Classes/**/*'
-  s.public_header_files = 'BAPeekPop/Classes/BAPeekPop.h'
+  s.public_header_files = 'BAPeekPop/Classes/BAPeekPop.h', "BAPeekPop/Classes/BAPreviewingViewController.h"
   s.resources = 'BAPeekPop/Assets/BAPeekPopAssets.xcassets'
   # s.resource_bundles = {
   #   'BAPeekPop' => ['BAPeekPop/Assets/*.png']
