@@ -8,6 +8,7 @@
 
 #import "BAPeekPop.h"
 #import "BAPeekPop+Private.h"
+#import "BAPreviewingViewController+Private.h"
 #import "BAViewControllerPreviewingContext.h"
 #import "BAPreviewingViewController.h"
 

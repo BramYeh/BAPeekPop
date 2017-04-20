@@ -9,26 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-@class BAPreviewingViewController;
-
-
-@protocol BAPreviewingViewControllerDelegate <NSObject>
-
-- (void)previewingViewControllerDidDismiss:(BAPreviewingViewController *)previewingViewController;
-
-@end
-
-
+/**
+ Make this function available to other files to be able to use the peekpop view in MKAnnotations since annotations cannot detect long tap gestures using BAPeekPop. However, I would strongly recommend not to call this method directly.
+ */
 @interface BAPreviewingViewController : UIViewController
-
-@property (nonatomic, readonly) BOOL isActionBottonDisplayed;
-@property (nonatomic, weak) id <BAPreviewingViewControllerDelegate> delegate;
-
-- (instancetype)initWithPeekViewController:(UIViewController *)peekViewController context:(id <UIViewControllerPreviewing>)previewing sourcePoint:(CGPoint)sourcePoint;
-
-- (BOOL)isTouchPointInView:(CGPoint)point;
-- (void)startPeek;
-- (void)handlePeekWithOffset:(CGVector)offset;
-- (void)stopPeek;
 
 @end

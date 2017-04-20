@@ -1,6 +1,6 @@
 # BAPeekPop
 
-[![CI Status](http://img.shields.io/travis/Bram (hryeh)/BAPeekPop.svg?style=flat)](https://travis-ci.org/BramYeh/BAPeekPop)
+[![CI Status](https://travis-ci.org/BramYeh/BAPeekPop.svg?branch=master&style=flat)](https://travis-ci.org/BramYeh/BAPeekPop)
 [![Version](https://img.shields.io/cocoapods/v/BAPeekPop.svg?style=flat)](http://cocoapods.org/pods/BAPeekPop)
 [![License](https://img.shields.io/cocoapods/l/BAPeekPop.svg?style=flat)](http://cocoapods.org/pods/BAPeekPop)
 [![Platform](https://img.shields.io/cocoapods/p/BAPeekPop.svg?style=flat)](http://cocoapods.org/pods/BAPeekPop)
@@ -30,7 +30,7 @@ BAPeekPop has no extra methods in delegate, you only need to implement
 NS_CLASS_AVAILABLE_IOS(9_0) @protocol UIViewControllerPreviewingDelegate <NSObject>
 ```
 
-The reference ![example](https://github.com/BramYeh/BAPeekPop/blob/master/Example/BAPeekPop/ViewController.m#L95)
+The reference [example](https://github.com/BramYeh/BAPeekPop/blob/master/Example/BAPeekPop/ViewController.m#L105)
 
 ### How to add Action and Group Buttons
 
@@ -57,7 +57,7 @@ NS_CLASS_AVAILABLE_IOS(9_0) @interface BAPreviewActionGroup : UIPreviewActionGro
 
 @end
 ```
-The reference ![example](https://github.com/BramYeh/BAPeekPop/blob/master/Example/BAPeekPop/PreviewingViewController.m#L53)
+The reference [example](https://github.com/BramYeh/BAPeekPop/blob/master/Example/BAPeekPop/PreviewingViewController.m#L53)
 
 
 ## Example Project

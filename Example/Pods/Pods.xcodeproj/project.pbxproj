@@ -326,6 +326,7 @@
 		3540A22ED0BCD131593E34FB31E9312B /* KWBeIdenticalToMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWBeIdenticalToMatcher.m; path = Classes/Matchers/KWBeIdenticalToMatcher.m; sourceTree = "<group>"; };
 		36B0656F925873E758C8B1E5AD0D2B33 /* KWAny.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWAny.m; path = Classes/Core/KWAny.m; sourceTree = "<group>"; };
 		36ECB36145EBED5561B985290A590803 /* KWInvocationCapturer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWInvocationCapturer.h; path = Classes/Core/KWInvocationCapturer.h; sourceTree = "<group>"; };
+		37E39E741EA894A1004CB690 /* BAPreviewingViewController+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BAPreviewingViewController+Private.h"; sourceTree = "<group>"; };
 		37E7B1B843F4DC00147BEB964D6FDA7C /* KWBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWBlock.m; path = Classes/Core/KWBlock.m; sourceTree = "<group>"; };
 		3802533B2A5063C27242740CA6FAE12F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		3824E39144BC2061CBC83201EC64836E /* BAPeekPop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BAPeekPop-dummy.m"; sourceTree = "<group>"; };
@@ -871,6 +872,7 @@
 				002EFD09CF591A6C4511F4888BFA1367 /* BAActionCollectionViewCell.m */,
 				12334411455DD376F8FA489FB32A0667 /* BAPreviewingViewController.h */,
 				1D56995D8FC5E1D7385F2FE50B8CBB8A /* BAPreviewingViewController.m */,
+				37E39E741EA894A1004CB690 /* BAPreviewingViewController+Private.h */,
 				527547FD2A40561B29239E5D785E3B8F /* BAViewControllerPreviewingContext.h */,
 				68206F17A64E7AC9C9636FC116B0E551 /* BAViewControllerPreviewingContext.m */,
 			);
