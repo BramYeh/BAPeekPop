@@ -10,10 +10,6 @@
 
 @interface BAPeekPop (Private)
 
-- (void)presentPreviewingViewController:(UIViewController *)contentViewController sourcePoint:(CGPoint)sourcePoint;
-
-- (void)dismissPreviewingViewController;
-
 @end
 
 

@@ -35,7 +35,7 @@
         UILabel *label = [[UILabel alloc] initWithFrame:self.bounds];
         label.translatesAutoresizingMaskIntoConstraints = NO;
         label.backgroundColor = [UIColor clearColor];
-        label.textColor = [UIColor colorWithRed:14.0/255 green:122.0/255 blue:254.0/255 alpha:1];
+        label.textColor = [UIColor colorWithRed:14.0f/255.0f green:122.0f/255.0f blue:254.0f/255.0f alpha:1.0f];
         label.textAlignment = NSTextAlignmentCenter;
         label;
     });
