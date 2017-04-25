@@ -12,6 +12,18 @@
 /**
  Make this function available to other files to be able to use the peekpop view in MKAnnotations since annotations cannot detect long tap gestures using BAPeekPop. However, I would strongly recommend not to call this method directly.
  */
+
+@class BAPreviewingViewController;
+
+@protocol BAPreviewingViewControllerDelegate <NSObject>
+
+- (void)previewingViewControllerDidDismiss:(BAPreviewingViewController *)previewingViewController;
+
+@end
+
 @interface BAPreviewingViewController : UIViewController
+
+@property (nonatomic, readonly) BOOL isActionBottonDisplayed;
+@property (nonatomic, weak) id <BAPreviewingViewControllerDelegate> delegate;
 
 @end

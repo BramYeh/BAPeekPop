@@ -6,11 +6,9 @@
 //  Copyright (c) 2017 Bram (hryeh). All rights reserved.
 //
 
-#import "BAPeekPop.h"
 #import "BAPeekPop+Private.h"
 #import "BAPreviewingViewController+Private.h"
 #import "BAViewControllerPreviewingContext.h"
-#import "BAPreviewingViewController.h"
 
 @interface BAPeekPop () <BAPreviewingViewControllerDelegate>
 
