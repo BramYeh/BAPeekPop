@@ -8,9 +8,6 @@
 
 #import "BAPreviewingViewController.h"
 
-
-
-
 @interface BAPreviewingViewController (Private)
 
 - (instancetype)initWithPeekViewController:(UIViewController *)peekViewController context:(id <UIViewControllerPreviewing>)previewing sourcePoint:(CGPoint)sourcePoint;

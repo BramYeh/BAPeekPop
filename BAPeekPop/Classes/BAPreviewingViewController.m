@@ -25,8 +25,6 @@
 // action items
 @property (nonatomic, strong) UICollectionView *actionCollectionView;
 @property (nonatomic, copy) NSArray <id <UIPreviewActionItem>> *actionItems;
-// it should be detected by action buttons displaying or not
-@property (nonatomic, assign) BOOL isActionBottonDisplayed;
 // original view's setting temp cache
 @property(nullable, strong) CALayer *origViewLayerMask;
 

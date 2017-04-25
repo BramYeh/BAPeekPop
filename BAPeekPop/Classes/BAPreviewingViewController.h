@@ -23,7 +23,8 @@
 
 @interface BAPreviewingViewController : UIViewController
 
-@property (nonatomic, readonly) BOOL isActionBottonDisplayed;
+// it should be detected by action buttons displaying or not
+@property (nonatomic, assign) BOOL isActionBottonDisplayed;
 @property (nonatomic, weak) id <BAPreviewingViewControllerDelegate> delegate;
 
 @end
