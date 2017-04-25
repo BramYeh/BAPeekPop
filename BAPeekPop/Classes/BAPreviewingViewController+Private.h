@@ -1,27 +1,14 @@
 //
 //  BAPreviewingViewController+Private.h
-//  Pods
+//  BAPeekPop
 //
-//  Created by  Bram Yeh on 2017/4/20.
-//
+//  Created by Bram (hryeh) on 01/11/2017.
+//  Copyright (c) 2017 Bram (hryeh). All rights reserved.
 //
 
 #import "BAPreviewingViewController.h"
 
-@class BAPreviewingViewController;
-
-
-@protocol BAPreviewingViewControllerDelegate <NSObject>
-
-- (void)previewingViewControllerDidDismiss:(BAPreviewingViewController *)previewingViewController;
-
-@end
-
-
 @interface BAPreviewingViewController (Private)
-
-@property (nonatomic, readonly) BOOL isActionBottonDisplayed;
-@property (nonatomic, weak) id <BAPreviewingViewControllerDelegate> delegate;
 
 - (instancetype)initWithPeekViewController:(UIViewController *)peekViewController context:(id <UIViewControllerPreviewing>)previewing sourcePoint:(CGPoint)sourcePoint;
 
