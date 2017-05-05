@@ -12,5 +12,5 @@
 @interface UIViewController (TopViewController)
 
 /// The current top view controller of the application
-@property (nonatomic, readonly) UIViewController *topmostViewController;
+@property (nonatomic, readonly) UIViewController *ba_topmostViewController;
 @end

@@ -11,7 +11,7 @@
 
 @implementation UIViewController (TopViewController)
 
-- (UIViewController *)topmostViewController {
+- (UIViewController *)ba_topmostViewController {
     return [self p_topViewController:[UIApplication sharedApplication].keyWindow.rootViewController];
 }
 
@@ -19,16 +19,16 @@
     
     if ([rootViewController isKindOfClass:[UINavigationController class]]) {
         UINavigationController *navigationController = (UINavigationController *)rootViewController;
-        return [self topViewController:[navigationController.viewControllers lastObject]];
+        return [self p_topViewController:[navigationController.viewControllers lastObject]];
     }
     
     if ([rootViewController isKindOfClass:[UITabBarController class]]) {
         UITabBarController *tabController = (UITabBarController *)rootViewController;
-        return [self topViewController:tabController.selectedViewController];
+        return [self p_topViewController:tabController.selectedViewController];
     }
     
     if (rootViewController.presentedViewController) {
-        return [self topViewController:rootViewController];
+        return [self p_topViewController:rootViewController];
     }
     
     return rootViewController;

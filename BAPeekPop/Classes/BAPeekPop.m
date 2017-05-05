@@ -205,7 +205,7 @@
     
     // 2. display BAPreviewingViewController
     // addChildViewController: will call [child willMoveToParentViewController:self] before adding the child
-    UIViewController *topmostViewController = [UIApplication sharedApplication].keyWindow.rootViewController.topmostViewController;
+    UIViewController *topmostViewController = [UIApplication sharedApplication].keyWindow.rootViewController.ba_topmostViewController;
     [topmostViewController addChildViewController:self.previewingViewController];
     [topmostViewController.view addSubview:self.previewingViewController.view];
     [self.previewingViewController didMoveToParentViewController:topmostViewController];
