@@ -9,6 +9,7 @@
 #import "BAPeekPop+Private.h"
 #import "BAPreviewingViewController+Private.h"
 #import "BAViewControllerPreviewingContext.h"
+#import "UIViewController+TopViewController.h"
 
 @interface BAPeekPop () <BAPreviewingViewControllerDelegate>
 
@@ -204,9 +205,10 @@
     
     // 2. display BAPreviewingViewController
     // addChildViewController: will call [child willMoveToParentViewController:self] before adding the child
-    [[UIApplication sharedApplication].keyWindow.rootViewController addChildViewController:self.previewingViewController];
-    [[UIApplication sharedApplication].keyWindow.rootViewController.view addSubview:self.previewingViewController.view];
-    [self.previewingViewController didMoveToParentViewController:[UIApplication sharedApplication].keyWindow.rootViewController];
+    UIViewController *topmostViewController = [UIApplication sharedApplication].keyWindow.rootViewController.topmostViewController;
+    [topmostViewController addChildViewController:self.previewingViewController];
+    [topmostViewController.view addSubview:self.previewingViewController.view];
+    [self.previewingViewController didMoveToParentViewController:topmostViewController];
 }
 
 - (void)dismissPreviewingViewController {

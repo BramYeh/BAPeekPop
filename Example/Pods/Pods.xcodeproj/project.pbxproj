@@ -86,6 +86,8 @@
 		536C22697DABC45BBC2A8D033599AF78 /* BAConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E7ADA67F1C332BD48226D121F51F45 /* BAConfig.m */; };
 		54BECFDC58AD3FC45F083276D07A7596 /* KWCallSite.m in Sources */ = {isa = PBXBuildFile; fileRef = 852151E3E69E86449AD8B711C9FB69BB /* KWCallSite.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		55150399E37D42EFD16CF1F831F78761 /* NSObject+KiwiSpyAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7E56D87B8411C02F6FC45C42895F25 /* NSObject+KiwiSpyAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		563AF2251EBCB32600C1B44B /* UIViewController+TopViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 563AF2231EBCB32600C1B44B /* UIViewController+TopViewController.h */; };
+		563AF2261EBCB32600C1B44B /* UIViewController+TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 563AF2241EBCB32600C1B44B /* UIViewController+TopViewController.m */; };
 		57DD09D6D2C847A54896BED64D030DB9 /* KWGenericMatchingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B0943D342DD4AAEF816FC5FDE55360D7 /* KWGenericMatchingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		587AF4F6DECAAE07F71883216262A188 /* KWBeWithinMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 04877308E5E20DA359C99F9BD2194B7F /* KWBeWithinMatcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		59C0697E3F9D0C8057FD340EB3F8710E /* KWBlockNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4066B3C64EFE9C857E3D2C20A93CD3BB /* KWBlockNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -364,6 +366,8 @@
 		527547FD2A40561B29239E5D785E3B8F /* BAViewControllerPreviewingContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BAViewControllerPreviewingContext.h; sourceTree = "<group>"; };
 		5576D7FF9C8964C911FBACD7A92BEFBD /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		5602C344F6DE15A248583C87CC980990 /* KWExampleSuite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWExampleSuite.h; path = Classes/Core/KWExampleSuite.h; sourceTree = "<group>"; };
+		563AF2231EBCB32600C1B44B /* UIViewController+TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TopViewController.h"; sourceTree = "<group>"; };
+		563AF2241EBCB32600C1B44B /* UIViewController+TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TopViewController.m"; sourceTree = "<group>"; };
 		563E0246E82B07850A9A91752E6473EC /* KWExampleNodeVisitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWExampleNodeVisitor.h; path = Classes/Core/KWExampleNodeVisitor.h; sourceTree = "<group>"; };
 		56DE3872B59DC7306E567B6713AAB07B /* NSMethodSignature+KiwiAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMethodSignature+KiwiAdditions.h"; path = "Classes/Core/NSMethodSignature+KiwiAdditions.h"; sourceTree = "<group>"; };
 		57065409D476C4D0FD11BC5F2BEAAD99 /* Pods-BAPeekPop_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BAPeekPop_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -864,18 +868,20 @@
 		7CA8083C959B10740BEC79E003B52F24 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				487A578931B1B5FC6D78331E21891EC9 /* BAActionCollectionViewCell.h */,
+				002EFD09CF591A6C4511F4888BFA1367 /* BAActionCollectionViewCell.m */,
+				1CA9058E775E74EECECC6727DC222225 /* BAConfig.h */,
+				C5E7ADA67F1C332BD48226D121F51F45 /* BAConfig.m */,
 				388EE659390B9817DAA901EE71C057F2 /* BAPeekPop.h */,
 				B18C54DDB9C663EDC93A3C5A8C0056C4 /* BAPeekPop.m */,
 				23C7C1CC67A0425978C649332CCFB7F0 /* BAPeekPop+Private.h */,
-				1CA9058E775E74EECECC6727DC222225 /* BAConfig.h */,
-				C5E7ADA67F1C332BD48226D121F51F45 /* BAConfig.m */,
-				487A578931B1B5FC6D78331E21891EC9 /* BAActionCollectionViewCell.h */,
-				002EFD09CF591A6C4511F4888BFA1367 /* BAActionCollectionViewCell.m */,
 				12334411455DD376F8FA489FB32A0667 /* BAPreviewingViewController.h */,
 				1D56995D8FC5E1D7385F2FE50B8CBB8A /* BAPreviewingViewController.m */,
 				37E39E741EA894A1004CB690 /* BAPreviewingViewController+Private.h */,
 				527547FD2A40561B29239E5D785E3B8F /* BAViewControllerPreviewingContext.h */,
 				68206F17A64E7AC9C9636FC116B0E551 /* BAViewControllerPreviewingContext.m */,
+				563AF2231EBCB32600C1B44B /* UIViewController+TopViewController.h */,
+				563AF2241EBCB32600C1B44B /* UIViewController+TopViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1051,6 +1057,7 @@
 				4F215259B3AE7E07CDE636706B2BD21C /* BAPreviewingViewController.h in Headers */,
 				9E69EE64A8468C7C8364D63B8EE1C5B9 /* BAConfig.h in Headers */,
 				37E265C8FC960BD5FF0CB62C5D60E6B4 /* BAPeekPop+Private.h in Headers */,
+				563AF2251EBCB32600C1B44B /* UIViewController+TopViewController.h in Headers */,
 				E5116D27FD3411F901DBA5E80A1FDCD7 /* BAViewControllerPreviewingContext.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1319,6 +1326,7 @@
 				536C22697DABC45BBC2A8D033599AF78 /* BAConfig.m in Sources */,
 				669E4B23DF556B02E9274960A3B80380 /* BAPeekPop-dummy.m in Sources */,
 				1352F131A6C8DE7945C24D35C01D6C4E /* BAPeekPop.m in Sources */,
+				563AF2261EBCB32600C1B44B /* UIViewController+TopViewController.m in Sources */,
 				B533BDAD2127C993B12017C6FEB35272 /* BAPreviewingViewController.m in Sources */,
 				CCEB07FEABA97FDDED704217D4F0D2F1 /* BAViewControllerPreviewingContext.m in Sources */,
 			);
