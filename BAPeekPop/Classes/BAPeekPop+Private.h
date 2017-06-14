@@ -9,7 +9,8 @@
 #import "BAPeekPop.h"
 
 @interface BAPeekPop (Private)
-
+/// The current top view controller of the application
+@property (nonatomic, readonly) UIViewController *topmostViewController;
 @end
 
 
