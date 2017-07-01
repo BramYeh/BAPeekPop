@@ -14,6 +14,7 @@
 		37079AB81E26836C00382D60 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37079AB41E26836C00382D60 /* 2.jpg */; };
 		37079AB91E26836C00382D60 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37079AB51E26836C00382D60 /* 3.jpg */; };
 		37079ABA1E26836C00382D60 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37079AB61E26836C00382D60 /* 4.jpg */; };
+		376B9CCC1F079DB000B04882 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 376B9CCB1F079DB000B04882 /* CHANGELOG.md */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -52,6 +53,7 @@
 		37079AB41E26836C00382D60 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = Images/2.jpg; sourceTree = "<group>"; };
 		37079AB51E26836C00382D60 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpg; path = Images/3.jpg; sourceTree = "<group>"; };
 		37079AB61E26836C00382D60 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 4.jpg; path = Images/4.jpg; sourceTree = "<group>"; };
+		376B9CCB1F079DB000B04882 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		5D94320FA1F5F4675F25A3AB /* BAPeekPop.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BAPeekPop.podspec; path = ../BAPeekPop.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* BAPeekPop_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BAPeekPop_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -205,6 +207,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				376B9CCB1F079DB000B04882 /* CHANGELOG.md */,
 				5D94320FA1F5F4675F25A3AB /* BAPeekPop.podspec */,
 				DD2BF58B40EF7C9147CC4491 /* README.md */,
 				68A10F78EA393989938AB53F /* LICENSE */,
@@ -426,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
+				376B9CCC1F079DB000B04882 /* CHANGELOG.md in Sources */,
 				6003F5A7195388D20070C39A /* ViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				37079AAF1E26833400382D60 /* PreviewingViewController.m in Sources */,
