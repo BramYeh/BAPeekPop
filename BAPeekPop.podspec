@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BAPeekPop'
-  s.version          = '1.1.1'
+  s.version          = '1.1.2'
   s.summary          = 'Peek & Pop Compat for Long Press on non 3D touch Device of iOS 9+'
 
 # This description is used to generate tags and improve search results.
