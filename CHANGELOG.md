@@ -1,3 +1,7 @@
+## [v1.1.2](https://github.com/BramYeh/BAPeekPop/releases/tag/1.1.2)
+* Add more unit tests coverage
+* Fix issue when presenting previewingViewController from a modal view controller in devices without 3D Touch. @gabmarfe
+
 ## [v1.1.1](https://github.com/BramYeh/BAPeekPop/releases/tag/1.1.1)
 * Make some functions available to other files to be able to use the peekpop view in MKAnnotations since annotations cannot detect long tap gestures using BAPeekPop @kimmanuel
 * Changed text color of actions buttons @kimmanuel

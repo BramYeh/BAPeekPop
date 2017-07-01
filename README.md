@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/BAPeekPop.svg?style=flat)](http://cocoapods.org/pods/BAPeekPop)
 [![License](https://img.shields.io/cocoapods/l/BAPeekPop.svg?style=flat)](http://cocoapods.org/pods/BAPeekPop)
 [![Platform](https://img.shields.io/cocoapods/p/BAPeekPop.svg?style=flat)](http://cocoapods.org/pods/BAPeekPop)
+[![Codecov](https://codecov.io/gh/BramYeh/BAPeekPop/branch/master/graph/badge.svg)](https://codecov.io/gh/BramYeh/BAPeekPop)
 
 * Peek &amp; Pop Compat for Long Press on non 3D touch Device of iOS 9+ 
 * BAPeekPop is the Objective-C library to support 3D touch similar operation on older device via long-press
